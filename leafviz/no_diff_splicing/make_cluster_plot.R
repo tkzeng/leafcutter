@@ -21,8 +21,6 @@ make_cluster_plot <- function(
   #for testing!
   #cluster_to_plot <- "clu_8845"
   #cluster_to_plot <- "clu_36585"
-  levels(meta$group) <- c("Brain", "Heart", "Lungs", "Fat")
-  meta$group <- unlist(strsplit("Heart Lungs Brain Lungs Brain Heart Brain Fat Heart Heart Brain Heart Brain Fat Brain Brain Heart Brain Heart Brain", " "))
   meta$group=as.factor(meta$group)
   group_names=levels(meta$group)
   
